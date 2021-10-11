@@ -24,9 +24,9 @@ def checkSort(a, n):
         if (not isSorted):
             break
         if isSorted:
-            print("정렬 완료")
+            print("Sorting complete")
         else:
-            print("정렬 오류 발생")
+            print("Sorting error occurred")
 import random, time
 
 N = 100000
