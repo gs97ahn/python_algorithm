@@ -37,5 +37,5 @@ for i in range(N):
 start_time = time.time()
 quickSort(a, 1, N)
 end_time = time.time() - start_time
-print("퀵 정렬의 실행 시간 (N=%d) : %0.3f"%(N, end_time))
+print("Quick sort process time (N=%d) : %0.3f"%(N, end_time))
 checkSort(a, N)
