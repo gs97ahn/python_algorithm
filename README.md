@@ -1,7 +1,7 @@
 # python_algorithm
+- 
+##Selection Sort
+Total Time Complexity = O(N^2)
 
-<h3>Selection Sort</h3>
-<p>Total Time Complexity = O(N^2)</p>
-
-<h3>Bubble Sort</h3>
-<p>Total Time Complexity = O(N^2)</p>
+##Bubble Sort
+Total Time Complexity = O(N^2)
