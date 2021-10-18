@@ -13,3 +13,6 @@ Total Time Complexity = O(N*LogN)
 
 ## Quick Sort
 Total Time Complexity = O(N*LogN)
+
+## Heap Sort
+Total Time Complexity = O(N*LogN)
