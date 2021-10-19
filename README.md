@@ -8,6 +8,9 @@ Total Time Complexity = O(N<sup>2</sup>)
 ## Insertion Sort
 Total Time Complexity = O(N<sup>2</sup>)
 
+## Shell Sort
+Total Time Complexity = O(N<sup>2</sup>)
+
 ## Merege Sort
 Total Time Complexity = O(N*LogN)
 
