@@ -21,4 +21,4 @@ Total Time Complexity = O(N*LogN)
 Total Time Complexity = O(N*LogN)
 
 ## Radix Sort
-Total Time Complexity = O(N*k/d)
+Total Time Complexity = O(N)
