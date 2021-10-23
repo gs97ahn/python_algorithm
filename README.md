@@ -12,10 +12,21 @@ selectionSort(a[], n)
         minIndex <- j;
     swap a[minIndex] and a[i];
   }
+end selectionSort()
 ```
 
 ## Bubble Sort
 Total Time Complexity = O(N<sup>2</sup>)
+
+### Bubble Sort ADL
+```
+bubbleSort(a[], n)
+  for (i <- n; i > 1; i <- i - 1) do
+    for (j <- 1; j < i; j <- j + 1) do
+      if (a[j] > a[j + 1]) then
+        swap a[j] and a[j + 1];
+end bubbleSort()
+```
 
 ## Insertion Sort
 Total Time Complexity = O(N<sup>2</sup>)
