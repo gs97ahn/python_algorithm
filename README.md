@@ -2,6 +2,7 @@
 ## Selection Sort
 Total Time Complexity = O(N<sup>2</sup>)
 
+```python
 ADL
 selectionSort(a[], n)
   for (i <- 1, i < n; i <- i + 1) do {
@@ -11,6 +12,7 @@ selectionSort(a[], n)
         minIndex <- j;
     swap a[minIndex] and a[i];
   }
+```
 
 ## Bubble Sort
 Total Time Complexity = O(N<sup>2</sup>)
