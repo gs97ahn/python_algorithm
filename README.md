@@ -1,4 +1,4 @@
-# python_algorithm
+# python_sorting_algorithm
 ## Selection Sort
 Total Time Complexity = O(N<sup>2</sup>)
 
