@@ -30,7 +30,18 @@ end bubbleSort()
 
 ## Insertion Sort
 Total Time Complexity = O(N<sup>2</sup>)
-
+```
+insertionSort(a[], n)
+  for(i <- 2; i <= n; i <- i + 1) do {
+    v <- a[i];
+    j <- i;
+    while(a[j - 1] > v) do {
+      a[j] <- a[j - 1];
+      j <- j - 1;
+    }
+    a[j] <- v;
+  }
+```
 ## Shell Sort
 Total Time Complexity = O(N<sup>2</sup>)
 
