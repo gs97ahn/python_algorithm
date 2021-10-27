@@ -41,9 +41,26 @@ insertionSort(a[], n)
     }
     a[j] <- v;
   }
+end insertionSort()
 ```
 ## Shell Sort
 Total Time Complexity = O(N<sup>2</sup>)
+```
+shellSort(a[], n)
+  for(h <- 1; 3 * h + 1 < n; h <- 3 * h + 1) do { };
+  for ( ; h > 0; h <- h / 3) do {
+    for (i <- h + 1; i <= n; i <- i + 1) do {
+      v <- a[i];
+      j <- i;
+      while(j > h and a[j - h] > v) do {
+        a[j] <- a[j - h];
+        j <- j - h;
+      }
+      a[j] <- v;
+    }
+  }
+ end shellSort()
+```
 
 ## Merege Sort
 Total Time Complexity = O(N*LogN)
