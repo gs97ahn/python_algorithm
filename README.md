@@ -109,3 +109,6 @@ Total Time Complexity = O(N*LogN)
 
 ## Radix Sort
 Total Time Complexity = O(N)
+
+## Counting Sort
+Total Time Complexity = O(N + K)
