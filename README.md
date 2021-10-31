@@ -103,6 +103,29 @@ end merge()
 
 ## Quick Sort
 Total Time Complexity = O(N*LogN)
+```
+quickSort(a[], l, r)
+  if (r > l) then {
+    i <- partition(a[], l, r);
+    quickSort(a[], l, i - 1);
+    quickSort(a[], i + 1, r);
+  }
+end quickSort()
+
+partition(a[], l, r)
+  v <- a[r],
+  i <- l - 1;
+  j <- r;
+  for ( ; ; ) do {
+    do {i <- i + 1} while(a[i] < v);
+    do {j <- j - 1} while(a[j] > v);
+    if (i >= j) then break;
+    swap a[i] and a[j];
+  }
+  swap a[i] and a[r];
+  return i;
+end partition()
+```
 
 ## Heap Sort
 Total Time Complexity = O(N*LogN)
