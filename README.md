@@ -30,6 +30,8 @@ end bubbleSort()
 
 ## Insertion Sort
 Total Time Complexity = O(N<sup>2</sup>)
+
+### Insertion Sort ADL
 ```
 insertionSort(a[], n)
   for(i <- 2; i <= n; i <- i + 1) do {
@@ -45,6 +47,7 @@ end insertionSort()
 ```
 ## Shell Sort
 Total Time Complexity = O(N<sup>2</sup>)
+### Shell Sort ADL
 ```
 shellSort(a[], n)
   for(h <- 1; 3 * h + 1 < n; h <- 3 * h + 1) do { };
@@ -64,6 +67,7 @@ shellSort(a[], n)
 
 ## Merege Sort
 Total Time Complexity = O(N*LogN)
+### Merge Sort ADL
 ```
 mergeSort(a[], l, r)
   if (r > l) then {
@@ -103,6 +107,7 @@ end merge()
 
 ## Quick Sort
 Total Time Complexity = O(N*LogN)
+### Quick Sort ADL
 ```
 quickSort(a[], l, r)
   if (r > l) then {
@@ -129,6 +134,23 @@ end partition()
 
 ## Heap Sort
 Total Time Complexity = O(N*LogN)
+### Heap Sort ADL
+```
+shellSort(a[], n)
+  for (h <- 1; 3 * h + 1 < n; h <- 3 * h + 1) do { };
+  for ( ; h > 0; h <- h / 3) do {
+    for (i <- h + 1; i <= n; i <- i + 1) do {
+      v <- a[i];
+      j <- i;
+      while (j > h and a [j - h] > v) do {
+        a[j] <- a[j - h];
+        j <- j - h;
+      }
+      a[j] <- v;
+    }
+  }
+end shellSort()
+```
 
 ## Radix Sort
 Total Time Complexity = O(N)
