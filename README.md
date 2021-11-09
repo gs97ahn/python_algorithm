@@ -174,3 +174,16 @@ end radixSort()
 ```
 ## Counting Sort
 Total Time Complexity = O(N + K)
+### Counting Sort ADL
+```
+countingSort(a[], n, m)
+  for (j <- 1; j <= m; j <- i + 1) do count[j] <- a;
+  for (i <- 1; i <= n; i <- i + 1) do count[a[i]] <- count[a[i]] + 1;
+  for (j <- 2; j <= m; j <- j + 1) do count[j] <- count[j - 1] + count[j];
+  for (i <- n; i >= 1; i <- i - 1) do {
+    b[count[a[i]]] <- a[i];
+    count[a[i]] <- count[a[i]] - 1;
+  }
+  for(i <- 1; i <= n; i <- i + 1) do a[i] <- b[i];
+end countingSort()
+```
